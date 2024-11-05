@@ -1,0 +1,36 @@
+#SMTP Project
+
+import random
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+otp=random.randint(1111,9999)
+
+smtp_server="smtp.gmail.com"
+smtp_port=587
+mailusername="vtu17566@veltech.edu.in"
+mailpassword="nlht czkx ztog mbyv"
+
+from_mail="vtu17566@veltech.edu.in "
+to_mail=input("Enter Email address")
+subject="OTP For Validation"
+body=f"otp for validation id {otp}"
+
+msg= MIMEMultipart()
+msg['From']=from_mail
+msg['To']=to_mail
+msg['Subject']=subject
+msg.attach(MIMEText(body,'plain'))
+
+server=smtplib.SMTP(smtp_server,smtp_port)
+server.starttls()
+server.login(mailusername,mailpassword)
+server.send_message(msg)
+server.quit()
+
+verifyotp=int(input("enter otp to verify:"))
+if verifyotp==otp:
+    print("Login Sucess")
+else:
+    print("Login Failed")
+
