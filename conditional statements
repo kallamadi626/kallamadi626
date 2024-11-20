@@ -1,0 +1,27 @@
+#Conditional statements
+#If _Else
+'''
+age=int(input("Enter your age:"))
+vc=input("Do you have voter card(y/n) :")
+if ((age>=18) and (vc=="y")):
+        print("yes, you can vote")
+print("Outside If block")
+'''
+#Elif
+'''
+age=int(input("Enter your age:"))
+vc=input("Do you have voter card (y/n) :")
+if ((age>18) and (vc=="y")):
+        print("yes, you can vote")
+else:
+    print("no,you can't have")
+    print("Outside ifelse block")
+    '''
+#Nested conditional statement
+
+#Conditional Expression
+age=int(input("Enter your age:")
+        if age>=18
+        print("can vote")
+else:
+            
