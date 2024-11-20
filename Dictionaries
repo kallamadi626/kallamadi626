@@ -1,0 +1,55 @@
+#Dictionaries
+#creation
+#Homogenous
+'''
+d = {}
+print(d)
+print(type(d))
+d = {"name":"suresh",10:100,23.45:"abc"}
+print(d)
+print(type(d))
+'''
+#Heterogenous
+#Accessing
+#Indexing
+'''
+d = {10:100,20:200,30:300}
+print(d[10])
+print(d[20])
+'''
+#Looping
+#Methods
+'''
+d = {10:100,20:200,30:300,40:400}
+#get()
+print(d.get(1))
+print(d.get(100))
+#copy()
+x = d.copy()
+print(x)
+#keys()
+print(d.keys())
+#values()
+print(d.values())
+#items()
+print(d.items())
+'''
+#updation
+#indexing
+'''
+d = {1:100,2:200,3:300,4:40}
+d[2] = "abc"
+print(d)
+#methods
+#update
+d.update({2:200,5:50})
+print(d)
+#fromkeys
+x = {1,5,2,3,4,5}
+z = dict.fromkeys(x,30)
+print(z)
+'''
+#Deletion
+#Indexing
+d= {1:10,2:20,3:30,4:400}
+
